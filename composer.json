@@ -1,0 +1,22 @@
+{
+    "name": "powerfin/sf",
+    "description": "Automatic download and import SF data",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Talasan Nicholson",
+            "email": "talasan.nicholson@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4",
+        "nuovo/spreadsheet-reader": "dev-master",
+        "mcorrigan/salesforce-rest-api-php-wrapper": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "Powerfin\\": "classes"
+        }
+    }
+}
