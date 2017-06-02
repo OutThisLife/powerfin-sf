@@ -34,11 +34,6 @@ class Main {
 		try {
 			$batch = $this->sf->addBatch($job, $this->users);
 			$job = $this->sf->closeJob($job);
-
-			sleep(10);
-
-			$batch = $this->sf->getBatchInfo($job, $batch);
-			$result = $this->sf->getBatchResults($job, $batch);
 		} catch (Exception $e) {
 			wp_die($e->faultstring);
 		}
