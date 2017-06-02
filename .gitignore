@@ -1,4 +1,5 @@
 vendor/
+sheets/*
 config.php
 composer.lock
 sample.xlsx

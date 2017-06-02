@@ -10,4 +10,11 @@
 require_once __DIR__ . '/config.php';
 require_once __DIR__ . '/vendor/autoload.php';
 
-(new \Powerfin\Main)->execute();
+// if (!wp_next_scheduled('PSF_CRON'))
+// 	wp_schedule_event(time(), 'weekly', 'PSF_CRON');
+
+// add_action('PSF_CRON', function() {
+// 	(new \Powerfin\Main)->update();
+// });
+
+(new \Powerfin\Main(strtotime('-4 month')))->update();
