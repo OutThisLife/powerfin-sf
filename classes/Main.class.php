@@ -36,6 +36,7 @@ class Main {
 			$job = $this->sf->closeJob($job);
 
 			sleep(10);
+
 			$batch = $this->sf->getBatchInfo($job, $batch);
 			$result = $this->sf->getBatchResults($job, $batch);
 		} catch (Exception $e) {
